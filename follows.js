@@ -329,7 +329,7 @@
 						return false;
 					});
 
-					$('#feed-' + data.id + ' .duration-hour').click(function() {
+					$('#feed-' + data.id + ' .duration-hour12').click(function() {
 						$('#loadingData').foundation('reveal', 'open');
 						updateFeeds(data.id, thisFeedDatastreams, '12hours', 50);
 						return false;
