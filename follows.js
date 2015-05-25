@@ -329,6 +329,12 @@
 						return false;
 					});
 
+					$('#feed-' + data.id + ' .duration-hour').click(function() {
+						$('#loadingData').foundation('reveal', 'open');
+						updateFeeds(data.id, thisFeedDatastreams, '12hours', 50);
+						return false;
+					});
+
 					$('#feed-' + data.id + ' .duration-day').click(function() {
 						$('#loadingData').foundation('reveal', 'open');
 						updateFeeds(data.id, thisFeedDatastreams, '1day', 60);
